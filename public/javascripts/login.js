@@ -84,6 +84,7 @@ $(function () {
                         tips: [2]
                     })
                 }
+
             } else {
                 layer.tips('请认真核对密码', '.login-button', {
                     tips: [2]
