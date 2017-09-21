@@ -1,0 +1,23 @@
+<% include header %>
+<% if(kg==true){%>
+ <div class="div"><%= a%></div>
+  <div class="container">
+     <div class="content">
+         <form class="form" id="form">
+             <p>说点什么吧:</p>
+             <textarea name="textarea" id="" cols="40" rows="3"></textarea>
+             <br> <div class="button">发表</div>
+         </form>
+         <div class="ejs">
+
+         </div>
+         <div class="ejs2">
+
+         </div>
+     </div>
+  </div>
+<%}else {%>
+  <div class="div"><%= a%></div>
+<%}%>
+<% include footer %>
+<script src="javascripts/index.js"></script>

@@ -1,0 +1,35 @@
+<% data.forEach((s)=>{ %>
+<div>
+    <p>发布人:<%= s.name %>
+    <button class="Delete pull-right" id="<%= s._id %>"> 删除</button>
+    </p>
+    <p><%= s.publish %></p>
+</div>
+<% }) %>
+<button>当前页数<%= page%></button>
+<% if(count != 0){ %>
+<% if( count < 3){ %>
+<% for(var i = 1;i <= count;i++){ %>
+<button class="page-button"><%= i %></button>
+<% } %>
+<% }else { %>
+<% if(page < 3 ){ %>
+<% for(var b = 1;b <= 3;b++){ %>
+<button class="page-button"><%= b %></button>
+<% } %>
+<% }else { %>
+<% if((page + 2) > count){ %>
+<button class="page-button"><%= count - 2 %></button>
+<button class="page-button"><%= count - 1 %></button>
+<button class="page-button"><%= count %></button>
+<% }else { %>
+<button class="page-button"><%= page - 1 %></button>
+<button class="page-button"><%= page %></button>
+<button class="page-button"><%= page + 1 %></button>
+<% } %>
+<% } %>
+<% } %>
+<% } %>
+<button>总页数<%= count%></button>
+
+

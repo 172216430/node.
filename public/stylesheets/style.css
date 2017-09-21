@@ -1,0 +1,76 @@
+*{
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  background:rgb(242, 242, 242) ;
+}
+/*注册页面样式*/
+.login-container{
+  width: 1226px;
+  margin: 0 auto;
+}
+.login-form {
+  width: 500px;
+  height: 500px;
+  /*border: 1px solid #000;*/
+  margin:  0 auto;
+  text-align: left;
+}
+.login-form input{
+  margin: 20px 50px 20px 0;
+}
+.login-form button{
+  margin-left: 120px;
+}
+
+
+/*登陆页面*/
+.login form{
+   text-align: center;
+}
+.login form span{
+  color: red;
+}
+.login form input{
+  margin: 20px;
+}
+.login button{
+  margin-left: 930px;
+}
+/*主页*/
+.div{
+  width: 100px;
+  height: 100px;
+  line-height: 100px;
+  margin: 0 auto;
+}
+.content{
+   width: 960px;
+   margin: 30px auto;
+   background: white;
+  border-radius: 5px;
+  border: 1px solid #e6e6e6;
+  text-align: center;
+}
+.button{
+  width: 76px;
+  border: 1px solid #000;
+  margin: 0 auto;
+  line-height: 32px;
+}
+.button:hover{
+ cursor: pointer;
+}
+.ejs div{
+  margin-top:10px ;
+  border: 1px solid #2aabd2;
+}
+.ejs .Delete{
+  font-size: 8px;
+  border: 0;
+  background: red;
+  color: white;
+  width: 33px;
+  height: 33px;
+}

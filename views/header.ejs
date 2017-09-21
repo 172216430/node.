@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title><%= title%></title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="stylesheets/style.css">
+</head>
+<body>
+<nav class="navbar navbar-default" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="/">Too Bad</a>
+        </div>
+        <ul class="nav navbar-nav navbar-right">
+            <% if( kg == false){%>
+            <li><a href="/login"><span class="glyphicon glyphicon-user"></span> 注册</a></li>
+            <li><a href="/register"><span class="glyphicon glyphicon-log-in"></span> 登录</a></li>
+             <% }else {%>
+            <li><a href="/logout"><span class="glyphicon glyphicon-log-in"></span> 退出</a></li>
+            <% } %>
+
+        </ul>
+    </div>
+</nav>
